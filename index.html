@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW5</title>
+
+
+	    <style>
+         body {
+            height:1800px;
+         }
+         .underthesea-char {
+            z-index: 10;
+            position: absolute;
+         }
+
+          #bg-block {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background: url('images/bg.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -webkit-filter: blur(2px);
+         }
+      </style>
+     
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+	   <script src="js/skrollr.min.js"></script>
+</head>
+
+
+
+<body>
+      <div id="bg-block">
+      </div>
+      <div class="underthesea-char" style="top:100px;width:100%;text-align:center">
+         <img src="images/bubbles.png" style="width: 500px; opacity: 1; -webkit-filter: blur(0px);" data-0="opacity: 0;-webkit-filter: blur(0px);" data-50="opacity: 0.5;-webkit-filter: blur(0px);" data-200="opacity: 1;-webkit-filter: blur(5px);" class="skrollable skrollable-between">
+      </div>
+
+      <div class="underthesea-char" style="top:100px;width:100%;text-align:left">
+         <img src="images/bubbles.png" style="width: 500px; opacity: 1; -webkit-filter: blur(0px);" data-0="opacity: 0;-webkit-filter: blur(0px);" data-50="opacity: 0.5;-webkit-filter: blur(0px);" data-200="opacity: 1;-webkit-filter: blur(5px);" class="skrollable skrollable-between">
+      </div>
+
+      <div class="underthesea-char" style="top:100px;width:100%;text-align:right">
+         <img src="images/bubbles.png" style="width: 500px; opacity: 1; -webkit-filter: blur(0px);" data-0="opacity: 0;-webkit-filter: blur(0px);" data-50="opacity: 0.5;-webkit-filter: blur(0px);" data-200="opacity: 1;-webkit-filter: blur(5px);" class="skrollable skrollable-between">
+      </div>
+
+      <div class="underthesea-char" style="top:300px;width:100%;text-align:center">
+         <img src="images/dive_deep.png" style="width: 500px; opacity: 1; -webkit-filter: blur(0px);" data-0="opacity: 1;-webkit-filter: blur(0px);" data-200="opacity: 0.5;-webkit-filter: blur(5px);" class="skrollable skrollable-between">
+      </div>
+
+      <div class="underthesea-char skrollable " style="top: 0px; opacity: 1; left: -900px;" data-0="opacity: 1;left: -900px;" data-250="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-550="opacity: 1;left: 800px;">
+         <img src="images/diver.png" style="width:600px;">
+      </div>
+
+      <div class="underthesea-char skrollable " style="top: 400px; opacity: 1; right: -500px; -webkit-filter: blur(0px);" data-0="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-250="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-550="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+         <img src="images/seaturtle.png" style="width:300px;">
+      </div>
+
+      <div class="underthesea-char skrollable " style="top: 400px; opacity: 1; left: -500px; -webkit-filter: blur(0px);" data-0="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-450="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-750="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
+         <img src="images/fish1.png" style="width:400px;">
+      </div>
+
+      <div class="underthesea-char skrollable " style="top: 600px; opacity: 1; right: -500px; -webkit-filter: blur(0px);" data-300="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-650="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-950="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+         <img src="images/fish2.png" style="width:400px;">
+      </div>
+
+      <div class="underthesea-char skrollable " style="top: 600px; opacity: 1; left: -500px; -webkit-filter: blur(0px);" data-300="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-650="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-950="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
+         <img src="images/clownfish.png" style="width:400px;">
+      </div>
+
+      <div class="underthesea-char skrollable " style="top: 900px; opacity: 1; right: -500px;" data-200="opacity: 1;right: -500px;" data-550="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-850="opacity: 1;right: 800px;">
+         <img src="images/diver2.png" style="width:300px;">
+      </div>
+
+      <div class="underthesea-char skrollable skrollable-before" style="top: 900px; opacity: 1; right: -500px; -webkit-filter: blur(0px);" data-650="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-950="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1200="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+         <img src="images/fish3.png" style="width:400px;">
+      </div>
+
+      <div class="underthesea-char skrollable skrollable-before" style="top: 1200px; opacity: 1; left: -500px; -webkit-filter: blur(0px);" data-900="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-1200="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-1500="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
+         <img src="images/fish4.png" style="width:400px;">
+      </div>
+
+      <div class="underthesea-char skrollable skrollable-before" style="top: 1200px; opacity: 1; right: -500px; -webkit-filter: blur(0px);" data-900="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-1200="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1500="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+         <img src="images/fish5.png" style="width:100px;">
+      </div>
+
+      <div class="underthesea-char skrollable skrollable-before" style="top: 1300px; opacity: 1; right: -500px; -webkit-filter: blur(0px);" data-1000="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-1300="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1400="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+         <img src="images/fish5.png" style="width:250px;">
+      </div>
+
+      <div class="underthesea-char skrollable skrollable-before" style="top: 1500px; opacity: 1; right: -500px; -webkit-filter: blur(0px);" data-1100="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-1400="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1500="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+         <img src="images/fish5.png" style="width:200px;">
+      </div>
+
+      <div class="underthesea-char" style="top:1600px;width:100%;text-align:center">
+         <img src="images/treasure2.png" style="width: 500px; opacity: 0;" data-1500="opacity: 0;" data-1600="opacity: 1;-webkit-filter: blur(0px);" class="skrollable skrollable-before">
+      </div>
+
+      <div class="underthesea-char" style="top:2100px;width:100%;text-align:center">
+         <img src="images/treasure_word.png" style="width: 500px; opacity: 0;" data-1500="opacity: 0;" data-1600="opacity: 1;-webkit-filter: blur(0px);" class="skrollable skrollable-before">
+      </div>
+
+      <script type="text/javascript">
+      var skrollr_obj = skrollr.init();
+      </script>
+   
+</body>
+</html>
